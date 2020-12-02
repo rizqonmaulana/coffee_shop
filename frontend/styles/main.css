@@ -1,0 +1,178 @@
+body {
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+nav.navbar-brand img {
+  width: 30px;
+  height: 33px;
+}
+
+.nav-login {
+  color: pink;
+}
+
+.navbar-nav .active .nav-link,
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link.active {
+  color: #6a4029;
+}
+
+.navbar-nav .nav-link {
+  color: #4f5665;
+  margin-right: 2vw;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6a4029;
+  margin-right: 2vw;
+}
+
+.nav-logo,
+.nav-menu,
+.nav-user {
+  width: 33vw;
+}
+
+.coffee-shop {
+  color: #0b132a;
+  font-size: 20px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+footer img.footer-brand {
+  width: 30px;
+  height: 33px;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f5665;
+}
+
+.footer-text-2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f5665;
+  list-style-type: none;
+  padding: unset;
+  line-height: 40px;
+}
+
+.footer-text-section {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4f5665;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f5665;
+}
+
+.coupun-card {
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-left: -45px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed black;
+  height: 1px;
+  margin-left: -20px;
+  width: 116%;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.coupon {
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.btn-coupon {
+  color: #fff;
+  background-color: #6a4029;
+  border-radius: 20px;
+  width: 230px;
+  line-height: 30px;
+  margin-left: -45px;
+}
+
+.btn-coupon:hover {
+  color: #fff;
+  background-color: #e8ab33;
+}
+
+.main-left {
+  border-top: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+.main-right {
+  border-top: 1px solid lightgrey;
+}
+
+.main-right .navbar-nav .nav-link {
+  color: #9f9f9f;
+}
+
+.main-right .navbar-nav .nav-link:hover {
+  color: #6a4029;
+  border-bottom: 3px solid #6a4029;
+}
+
+.main-right .navbar-nav li.active a {
+  color: #6a4029;
+  font-weight: 700;
+  border-bottom: 3px solid #6a4029;
+}
+
+.product-list {
+  margin-top: 70px;
+}
+
+.product-item {
+  width: 135px;
+  margin-top: -45px;
+}
+
+.card-product {
+  border-radius: 30px !important;
+  border: unset;
+  width: 10rem;
+  height: 250px;
+  margin: 0px 30px 100px 0px;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.card-text {
+  font-size: 17px;
+  font-weight: 700;
+  color: #6a4029;
+}
+
+@media (max-width: 992px) {
+  .coupon-card-parent {
+    margin-left: -7vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .coupon-card-parent {
+    margin-left: 25vw !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
