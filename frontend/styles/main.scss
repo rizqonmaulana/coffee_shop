@@ -3,6 +3,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 // nav
 nav.navbar-brand img {
   width: 30px;
@@ -76,95 +80,288 @@ footer img.footer-brand {
 }
 
 // product cust 1
-// left content
-.coupun-card {
-  border-radius: 20px;
-  font-family: "Poppins", sans-serif;
-  margin-left: -45px;
+.product-cust {
+  .main-left {
+    border-top: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+
+    .coupon-card-parent {
+      .coupon {
+        font-weight: 700;
+        font-size: 33px;
+      }
+
+      .btn-coupon {
+        color: #fff;
+        background-color: #6a4029;
+        border-radius: 20px;
+        width: 230px;
+        line-height: 30px;
+        margin-left: -45px;
+      }
+
+      .btn-coupon:hover {
+        color: #fff;
+        background-color: #e8ab33;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+      }
+
+      .coupon-card {
+        border-radius: 20px;
+        font-family: "Poppins", sans-serif;
+        margin-left: -45px;
+      }
+
+      .coupon-term-condition {
+        margin-left: -45px;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px dashed rgb(0, 0, 0);
+      height: 1px;
+      margin-left: -20px;
+      width: 116%;
+    }
+  }
+  .main-right {
+    border-top: 1px solid lightgrey;
+
+    .navbar-nav .nav-link {
+      color: #9f9f9f;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #6a4029;
+      border-bottom: 3px solid #6a4029;
+    }
+
+    .navbar-nav li.active a {
+      color: #6a4029;
+      font-weight: 700;
+      border-bottom: 3px solid #6a4029;
+    }
+
+    .product-list {
+      margin-top: 70px;
+    }
+
+    .product-item {
+      width: 135px;
+      margin-top: -45px;
+    }
+
+    .card-product {
+      border-radius: 30px !important;
+      border: unset;
+      width: 10rem;
+      height: 250px;
+      margin: 0px 30px 100px 0px;
+    }
+
+    .card-title {
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .card-text {
+      font-size: 17px;
+      font-weight: 700;
+      color: #6a4029;
+    }
+  }
 }
 
-hr {
-  border: none;
-  border-top: 1px dashed rgb(0, 0, 0);
-  height: 1px;
-  margin-left: -20px;
-  width: 116%;
-}
+// product details 2
+.product-details {
+  .main-left {
+    .product-card {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+      padding: 27px 30px;
 
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
+      .delivery-btn {
+        background-color: #f4f4f8;
+        color: #9f9f9f;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 30px;
+        padding: 3px 15px;
+        margin-right: 5px;
+        border: 1px solid rgba(186, 186, 186, 0.35);
+      }
 
-.coupon {
-  font-weight: 700;
-  font-size: 33px;
-}
+      .delivery-btn.active,
+      .delivery-btn:hover {
+        color: #fff;
+        background-color: #6a4029;
+        box-shadow: 0px 6px 20px rgba(137, 85, 55, 0.4);
+      }
 
-.btn-coupon {
-  color: #fff;
-  background-color: #6a4029;
-  border-radius: 20px;
-  width: 230px;
-  line-height: 30px;
-  margin-left: -45px;
-}
+      .set-delivery-time {
+        input {
+          border: 1px solid #f4f4f8;
+          border-radius: 5px;
+          background-color: #f4f4f8;
+          line-height: 35px;
+          width: 225px;
+          font-size: 13px;
+          color: #9f9f9f;
+        }
+      }
+    }
+  }
 
-.btn-coupon:hover {
-  color: #fff;
-  background-color: #e8ab33;
-}
+  .main-right {
+    padding-top: 100px !important;
+    padding-left: 3vw !important;
 
-.main-left {
-  border-top: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
-}
+    .product-detail {
+      .product-name h1 {
+        font-weight: 900;
+        font-size: 45px;
+      }
+      .product-desc {
+        font-size: 20px;
+        line-height: 30px;
+        color: #6a4029;
+      }
+      .delivery-time {
+        font-weight: 500;
+        font-size: 20px;
+        color: #6a4029;
+        width: 300px;
+      }
+      .count-n-price {
+        .product-amount {
+          color: #6a4029;
+          font-size: 20px;
+          font-weight: 700;
 
-// right content
-.main-right {
-  border-top: 1px solid lightgrey;
-}
+          .btn-min,
+          .btn-plus {
+            font-weight: 700;
+            color: #6a4029;
+            padding: 10px 15px;
+            background: #fff;
+            border: 1px solid #9f9f9f;
+          }
+          .btn-min {
+            position: absolute;
+            border-right: unset;
+            border-radius: 10px 0 0 10px;
+          }
+          .product-total-amount {
+            position: absolute;
+            margin-left: 25px;
+            width: 30px;
+            padding: unset !important;
+            width: 100px;
+            border: 1px solid #9f9f9f;
+          }
+          .btn-plus {
+            position: absolute;
+            margin-left: 109px;
+            border-left: unset;
+            border-radius: 0 10px 10px 0;
+          }
+          .btn-min:hover,
+          .btn-plus:hover {
+            background-color: #ffba33;
+          }
+          .text-right strong {
+            margin-right: 55px;
+          }
+        }
+      }
+      .text-right {
+        font-size: 30px;
+      }
+      .btn-add-n-ask {
+        .btn-add,
+        .btn-ask {
+          width: 430px;
+          height: 65px;
+          border-radius: 20px;
+          font-size: 20px;
+          font-weight: 700;
+          border: unset;
+        }
+        .btn-add {
+          color: #fff;
+          background-color: #6a4029;
+        }
+        .btn-ask {
+          color: #6a4029;
+          background-color: #ffba33;
+        }
+        .btn-add:hover {
+          color: #fff;
+          background-color: #824e32;
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+        }
+        .btn-ask:hover {
+          color: #6a4029;
+          background-color: #fdc451;
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+        }
+      }
+    }
+  }
 
-.main-right .navbar-nav .nav-link {
-  color: #9f9f9f;
-}
+  .product-delivery-option {
+    .main-left-bottom {
+      .size-card {
+        height: 160px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+      }
 
-.main-right .navbar-nav .nav-link:hover {
-  color: #6a4029;
-  border-bottom: 3px solid #6a4029;
-}
+      .title {
+        font-weight: 700;
+        font-size: 25px;
+      }
+      .btn-size-collection {
+        .btn-size {
+          font-weight: 700;
+          font-size: 30px;
+          width: 60px;
+          height: 60px;
+          border: unset;
+          margin-right: 25px;
+          background-color: #ffba33;
+        }
+        .btn-size:hover {
+          background-color: #ffae0c;
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+        }
+      }
+    }
+    .main-right-bottom {
+      .checkout-card {
+        border-radius: 20px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
 
-.main-right .navbar-nav li.active a {
-  color: #6a4029;
-  font-weight: 700;
-  border-bottom: 3px solid #6a4029;
-}
-
-.product-list {
-  margin-top: 70px;
-}
-
-.product-item {
-  width: 135px;
-  margin-top: -45px;
-}
-
-.card-product {
-  border-radius: 30px !important;
-  border: unset;
-  width: 10rem;
-  height: 250px;
-  margin: 0px 30px 100px 0px;
-}
-
-.card-title {
-  font-weight: 900;
-  font-size: 22px;
-}
-
-.card-text {
-  font-size: 17px;
-  font-weight: 700;
-  color: #6a4029;
+        .desc {
+          line-height: 13px;
+        }
+        .checkout {
+          .btn-checkout {
+            background-color: #ffba33;
+            border: unset;
+            padding: 10px;
+          }
+          .btn-checkout:hover {
+            background-color: #faa906;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+          }
+        }
+      }
+    }
+  }
 }
 
 // .btn-sign-up {
@@ -184,14 +381,118 @@ hr {
 //     width: 100vw !important;
 //   }
 // }
-@media (max-width: 992px) {
-  .coupon-card-parent {
-    margin-left: -7vw;
+
+@media (max-width: 1200px) {
+  .product-cust {
+    .main-left {
+      .coupon-card-parent {
+        margin-left: -12% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .product-cust {
+    .main-left {
+      .coupon-card-parent {
+        margin-left: 26vw !important;
+      }
+    }
   }
 }
 
 @media (max-width: 576px) {
-  .coupon-card-parent {
-    margin-left: 25vw !important;
+  .product-cust {
+    .main-left {
+      border-right: unset;
+      margin-bottom: 3vh;
+
+      .coupon-card {
+        margin-right: 10vw !important;
+        width: 240px !important;
+      }
+    }
+    .main-right {
+      ul {
+        flex-direction: column !important;
+      }
+
+      .product-list {
+        margin-left: 5vw !important;
+      }
+
+      .card-product {
+        width: 150px;
+        margin: 0px 25px 100px 0px;
+      }
+    }
+  }
+  .product-details {
+    .main-right {
+      .btn-add-n-ask {
+        .btn-add,
+        .btn-ask {
+          width: 350px !important;
+          height: 65px;
+          border-radius: 20px;
+          font-size: 20px;
+          font-weight: 700;
+          border: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .product-cust {
+    .main-left {
+      border-right: unset;
+      margin-bottom: 3vh;
+    }
+
+    .main-right {
+      ul {
+        flex-direction: column !important;
+      }
+
+      .coupon-card {
+        width: 560px !important;
+      }
+
+      .product-list {
+        margin-left: 5vw !important;
+
+        .card-product {
+          width: 140px;
+          margin: 0px 15px 100px 0px;
+        }
+
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+  .product-details {
+    .main-right {
+      .product-name {
+        h1 {
+          font-size: 40px !important;
+        }
+      }
+      .btn-add-n-ask {
+        .btn-add,
+        .btn-ask {
+          width: 320px !important;
+          height: 65px;
+          border-radius: 20px;
+          font-size: 20px;
+          font-weight: 700;
+          border: unset;
+        }
+      }
+    }
   }
 }

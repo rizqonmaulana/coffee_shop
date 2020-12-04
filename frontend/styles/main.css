@@ -3,6 +3,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 nav.navbar-brand img {
   width: 30px;
   height: 33px;
@@ -75,30 +79,17 @@ footer img.footer-brand {
   color: #4f5665;
 }
 
-.coupun-card {
-  border-radius: 20px;
-  font-family: "Poppins", sans-serif;
-  margin-left: -45px;
+.product-cust .main-left {
+  border-top: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 }
 
-hr {
-  border: none;
-  border-top: 1px dashed black;
-  height: 1px;
-  margin-left: -20px;
-  width: 116%;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
-
-.coupon {
+.product-cust .main-left .coupon-card-parent .coupon {
   font-weight: 700;
   font-size: 33px;
 }
 
-.btn-coupon {
+.product-cust .main-left .coupon-card-parent .btn-coupon {
   color: #fff;
   background-color: #6a4029;
   border-radius: 20px;
@@ -107,45 +98,60 @@ hr {
   margin-left: -45px;
 }
 
-.btn-coupon:hover {
+.product-cust .main-left .coupon-card-parent .btn-coupon:hover {
   color: #fff;
   background-color: #e8ab33;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
 }
 
-.main-left {
+.product-cust .main-left .coupon-card-parent .coupon-card {
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-left: -45px;
+}
+
+.product-cust .main-left .coupon-card-parent .coupon-term-condition {
+  margin-left: -45px;
+}
+
+.product-cust .main-left hr {
+  border: none;
+  border-top: 1px dashed black;
+  height: 1px;
+  margin-left: -20px;
+  width: 116%;
+}
+
+.product-cust .main-right {
   border-top: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
 }
 
-.main-right {
-  border-top: 1px solid lightgrey;
-}
-
-.main-right .navbar-nav .nav-link {
+.product-cust .main-right .navbar-nav .nav-link {
   color: #9f9f9f;
 }
 
-.main-right .navbar-nav .nav-link:hover {
+.product-cust .main-right .navbar-nav .nav-link:hover {
   color: #6a4029;
   border-bottom: 3px solid #6a4029;
 }
 
-.main-right .navbar-nav li.active a {
+.product-cust .main-right .navbar-nav li.active a {
   color: #6a4029;
   font-weight: 700;
   border-bottom: 3px solid #6a4029;
 }
 
-.product-list {
+.product-cust .main-right .product-list {
   margin-top: 70px;
 }
 
-.product-item {
+.product-cust .main-right .product-item {
   width: 135px;
   margin-top: -45px;
 }
 
-.card-product {
+.product-cust .main-right .card-product {
   border-radius: 30px !important;
   border: unset;
   width: 10rem;
@@ -153,26 +159,292 @@ hr {
   margin: 0px 30px 100px 0px;
 }
 
-.card-title {
+.product-cust .main-right .card-title {
   font-weight: 900;
   font-size: 22px;
 }
 
-.card-text {
+.product-cust .main-right .card-text {
   font-size: 17px;
   font-weight: 700;
   color: #6a4029;
 }
 
-@media (max-width: 992px) {
-  .coupon-card-parent {
-    margin-left: -7vw;
+.product-details .main-left .product-card {
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 27px 30px;
+}
+
+.product-details .main-left .product-card .delivery-btn {
+  background-color: #f4f4f8;
+  color: #9f9f9f;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 3px 15px;
+  margin-right: 5px;
+  border: 1px solid rgba(186, 186, 186, 0.35);
+}
+
+.product-details .main-left .product-card .delivery-btn.active,
+.product-details .main-left .product-card .delivery-btn:hover {
+  color: #fff;
+  background-color: #6a4029;
+  -webkit-box-shadow: 0px 6px 20px rgba(137, 85, 55, 0.4);
+          box-shadow: 0px 6px 20px rgba(137, 85, 55, 0.4);
+}
+
+.product-details .main-left .product-card .set-delivery-time input {
+  border: 1px solid #f4f4f8;
+  border-radius: 5px;
+  background-color: #f4f4f8;
+  line-height: 35px;
+  width: 225px;
+  font-size: 13px;
+  color: #9f9f9f;
+}
+
+.product-details .main-right {
+  padding-top: 100px !important;
+  padding-left: 3vw !important;
+}
+
+.product-details .main-right .product-detail .product-name h1 {
+  font-weight: 900;
+  font-size: 45px;
+}
+
+.product-details .main-right .product-detail .product-desc {
+  font-size: 20px;
+  line-height: 30px;
+  color: #6a4029;
+}
+
+.product-details .main-right .product-detail .delivery-time {
+  font-weight: 500;
+  font-size: 20px;
+  color: #6a4029;
+  width: 300px;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount {
+  color: #6a4029;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount .btn-min,
+.product-details .main-right .product-detail .count-n-price .product-amount .btn-plus {
+  font-weight: 700;
+  color: #6a4029;
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid #9f9f9f;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount .btn-min {
+  position: absolute;
+  border-right: unset;
+  border-radius: 10px 0 0 10px;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount .product-total-amount {
+  position: absolute;
+  margin-left: 25px;
+  width: 30px;
+  padding: unset !important;
+  width: 100px;
+  border: 1px solid #9f9f9f;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount .btn-plus {
+  position: absolute;
+  margin-left: 109px;
+  border-left: unset;
+  border-radius: 0 10px 10px 0;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount .btn-min:hover,
+.product-details .main-right .product-detail .count-n-price .product-amount .btn-plus:hover {
+  background-color: #ffba33;
+}
+
+.product-details .main-right .product-detail .count-n-price .product-amount .text-right strong {
+  margin-right: 55px;
+}
+
+.product-details .main-right .product-detail .text-right {
+  font-size: 30px;
+}
+
+.product-details .main-right .product-detail .btn-add-n-ask .btn-add,
+.product-details .main-right .product-detail .btn-add-n-ask .btn-ask {
+  width: 430px;
+  height: 65px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border: unset;
+}
+
+.product-details .main-right .product-detail .btn-add-n-ask .btn-add {
+  color: #fff;
+  background-color: #6a4029;
+}
+
+.product-details .main-right .product-detail .btn-add-n-ask .btn-ask {
+  color: #6a4029;
+  background-color: #ffba33;
+}
+
+.product-details .main-right .product-detail .btn-add-n-ask .btn-add:hover {
+  color: #fff;
+  background-color: #824e32;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+}
+
+.product-details .main-right .product-detail .btn-add-n-ask .btn-ask:hover {
+  color: #6a4029;
+  background-color: #fdc451;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+}
+
+.product-details .product-delivery-option .main-left-bottom .size-card {
+  height: 160px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+}
+
+.product-details .product-delivery-option .main-left-bottom .title {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.product-details .product-delivery-option .main-left-bottom .btn-size-collection .btn-size {
+  font-weight: 700;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border: unset;
+  margin-right: 25px;
+  background-color: #ffba33;
+}
+
+.product-details .product-delivery-option .main-left-bottom .btn-size-collection .btn-size:hover {
+  background-color: #ffae0c;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+}
+
+.product-details .product-delivery-option .main-right-bottom .checkout-card {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+}
+
+.product-details .product-delivery-option .main-right-bottom .checkout-card .desc {
+  line-height: 13px;
+}
+
+.product-details .product-delivery-option .main-right-bottom .checkout-card .checkout .btn-checkout {
+  background-color: #ffba33;
+  border: unset;
+  padding: 10px;
+}
+
+.product-details .product-delivery-option .main-right-bottom .checkout-card .checkout .btn-checkout:hover {
+  background-color: #faa906;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+}
+
+@media (max-width: 1200px) {
+  .product-cust .main-left .coupon-card-parent {
+    margin-left: -12% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-cust .main-left .coupon-card-parent {
+    margin-left: 26vw !important;
   }
 }
 
 @media (max-width: 576px) {
-  .coupon-card-parent {
-    margin-left: 25vw !important;
+  .product-cust .main-left {
+    border-right: unset;
+    margin-bottom: 3vh;
+  }
+  .product-cust .main-left .coupon-card {
+    margin-right: 10vw !important;
+    width: 240px !important;
+  }
+  .product-cust .main-right ul {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .product-cust .main-right .product-list {
+    margin-left: 5vw !important;
+  }
+  .product-cust .main-right .card-product {
+    width: 150px;
+    margin: 0px 25px 100px 0px;
+  }
+  .product-details .main-right .btn-add-n-ask .btn-add,
+  .product-details .main-right .btn-add-n-ask .btn-ask {
+    width: 350px !important;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: unset;
+  }
+}
+
+@media (max-width: 375px) {
+  .product-cust .main-left {
+    border-right: unset;
+    margin-bottom: 3vh;
+  }
+  .product-cust .main-right ul {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .product-cust .main-right .coupon-card {
+    width: 560px !important;
+  }
+  .product-cust .main-right .product-list {
+    margin-left: 5vw !important;
+  }
+  .product-cust .main-right .product-list .card-product {
+    width: 140px;
+    margin: 0px 15px 100px 0px;
+  }
+  .product-cust .main-right .product-list img {
+    width: 120px;
+  }
+  .product-details .main-right .product-name h1 {
+    font-size: 40px !important;
+  }
+  .product-details .main-right .btn-add-n-ask .btn-add,
+  .product-details .main-right .btn-add-n-ask .btn-ask {
+    width: 320px !important;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: unset;
   }
 }
 /*# sourceMappingURL=main.css.map */
