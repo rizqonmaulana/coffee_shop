@@ -146,25 +146,30 @@ footer img.footer-brand {
   margin-top: 70px;
 }
 
-.product-cust .main-right .product-item {
-  width: 135px;
-  margin-top: -45px;
+.product-cust .main-right .product-list .card-product-link {
+  margin: 0 30px 100px 0;
+  text-decoration: unset;
+  color: #000;
 }
 
-.product-cust .main-right .card-product {
+.product-cust .main-right .product-list .card-product-link .card-product {
   border-radius: 30px !important;
   border: unset;
   width: 10rem;
   height: 250px;
-  margin: 0px 30px 100px 0px;
 }
 
-.product-cust .main-right .card-title {
+.product-cust .main-right .product-list .card-product-link .card-product .product-item {
+  width: 135px;
+  margin-top: -45px;
+}
+
+.product-cust .main-right .product-list .card-product-link .card-product .card-title {
   font-weight: 900;
   font-size: 22px;
 }
 
-.product-cust .main-right .card-text {
+.product-cust .main-right .product-list .card-product-link .card-product .card-text {
   font-size: 17px;
   font-weight: 700;
   color: #6a4029;
@@ -415,9 +420,11 @@ footer img.footer-brand {
   .product-cust .main-right .product-list {
     margin-left: 5vw !important;
   }
+  .product-cust .main-right .product-list .card-product-link {
+    margin: 0 15px 100px 0;
+  }
   .product-cust .main-right .card-product {
     width: 150px;
-    margin: 0px 25px 100px 0px;
   }
   .product-details .main-left .product-card .pickup-btn {
     margin-top: 10px;
@@ -463,9 +470,14 @@ footer img.footer-brand {
   .product-cust .main-right .product-list {
     margin-left: 5vw !important;
   }
-  .product-cust .main-right .product-list .card-product {
+  .product-cust .main-right .product-list .card-product-link {
+    margin: 0 15px 100px 0 !important;
+  }
+  .product-cust .main-right .product-list .card-product-link .card-product {
     width: 140px;
-    margin: 0px 15px 100px 0px;
+  }
+  .product-cust .main-right .product-list .card-product-link .card-product .card-img-top {
+    width: 120px;
   }
   .product-cust .main-right .product-list img {
     width: 120px;
