@@ -45,6 +45,7 @@ nav.navbar-brand img {
 
 footer {
   padding: 100px 0;
+  background-color: #f8f8f8;
 }
 
 footer img.footer-brand {
@@ -388,6 +389,49 @@ footer img.footer-brand {
   background-color: #faa906;
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
           box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.34);
+}
+
+.payment-page {
+  background-image: url("/frontend/images/payment-bg.png");
+  background-repeat: unset;
+  background-size: cover;
+}
+
+.payment-page .main-left .order-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 60px 30px;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.payment-page .main-right .main-right-bottom {
+  padding: unset;
+}
+
+.payment-page .main-right .main-right-bottom div.address-card-container .address-card-content {
+  background-color: #fff !important;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+  padding: 30px 35px 10px;
+  line-height: 20px;
+}
+
+.payment-page .main-right .main-right-bottom div.address-card-container .btn-confirm {
+  width: 100%;
+  line-height: 60px;
+  background-color: #6a4029;
+  font-weight: 700;
+  color: #fff;
+  border: unset;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
+          box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
+}
+
+.payment-page .main-right .main-right-bottom div.address-card-container .btn-confirm:hover {
+  background-color: #663215;
 }
 
 @media (max-width: 1200px) {

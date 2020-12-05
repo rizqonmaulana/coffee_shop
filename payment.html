@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Coffee Shop - Product Details</title>
+    <title>Coffee Shop - Payment & Delivery</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="frontend/styles/main.css">
   </head>
   <body>
@@ -65,7 +63,7 @@
         <!-- mobile view menu -->
         <div class="d-flex flex-column d-none d-sm-block d-md-none">
           <div class="nav-menu-m align-center mx-auto my-auto">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 flex-row ">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 flex-row">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -83,150 +81,153 @@
         </div>
       </div>
     </nav>
-
-    <main> 
-      <div class="container product-details">
+    <main class="payment-page pb-5">
+      <div class="container">
         <div class="row">
-          <!-- main left content -->
-          <div class="col-lg-5 main-left pt-4">
-            <div class="product-name">
-              <p>
-                <span style="color: #4F5665;">Favorite & Promo </span> <span style="color: #6a4029;"><strong> > Cold Brew </strong></span>
-              </p>
-            </div>
-            <div class="product-pic text-center">
-              <img src="/frontend/images/cold_brew.png" class="rounded-circle mt-5 mb-4 mx-auto" style="width: 250px;">
-            </div>
-            <div class="product-card mt-5">
-              <div class="delivery-time-card">
-                <h5>Delivery and Time</h5>
-                  <div class="delivery-btn-collection-1 mt-4">
-                    <button class="delivery-btn active">Dine in</button>
-                    <button class="delivery-btn">Door Deliver</button>
-                    <button class="delivery-btn pickup-btn">Pick up</button>
-                  </div>
-                <br>
-                <span class="mr-5">Now</span>
-                <button class="delivery-btn active mr-2">Yes</button>
-                <button class="delivery-btn">No</button>
-                <br>
-                <div class="set-delivery-time mt-4 mb-4">
-                  <span class="mr-4">Set time</span>
-                  <input type="text" class="poppins" placeholder="Enter time for reservation">
+          <div class="col-lg-5 main-left">
+            <h5 class="mt-5" style="font-weight:700; font-size: 35px; color: #fff; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);">
+              Checkout your
+              <br> item now!
+            </h5>
+            <div class="order-card poppins mt-5"> 
+              <h5 style="text-align: center; font-size: 30px; font-weight: bold; color: #362115;">
+                Order Summary
+              </h5>
+              <div class="order-item pt-5 mb-3 d-flex flex-row align-items-center">
+                <div class="pic" style="width: 25%;">
+                  <img src="/frontend/images/product-3.png" style="height: 70px; width: 62px; border-radius: 20px;">
+                </div>
+                <div class="text mr-3" style="width: 45%;">
+                  Hazelnut Latte
+                  <br>
+                  x1
+                  <br>
+                  Regular
+                </div>
+                <div class="price text-right" style="width: 30%;">
+                  IDR 224.0
+                </div>
+              </div>
+              <div class="order-item d-flex flex-row align-items-center">
+                <div class="pic" style="width: 25%;">
+                  <img src="/frontend/images/product-2.png" style="height: 70px; width: 62px; border-radius: 20px;">
+                </div>
+                <div class="text mr-3"  style="width: 45%;">
+                  Chicken Fire Wings
+                  <br>
+                  x2
+                </div>
+                <div class="price text-right" style="width: 30%;">
+                  IDR 30.0
+                </div>
+              </div>
+              <hr style="width: 100%">
+              <div class="row" style="color: #362115; line-height: 35px;">
+                <div class="col">
+                  SUBTOTAL
+                  <br>
+                  TAX FEES
+                  <br>
+                  SHIPPING
+                  <br>
+                  <br>
+                  <strong style="font-size: 20px;">
+                    TOTAL
+                  </strong>
+                </div>
+                <div class="col text-right">
+                  IDR 120.000
+                  <br>
+                  IDR 20.000
+                  <br>
+                  IDR 10.000
+                  <br>
+                  <br>
+                  <strong style="font-size: 20px;">
+                    IDR 150.000
+                  </strong>
                 </div>
               </div>
             </div>
           </div>
-          <!-- main right content -->
-          <div class="col-lg-7 pt-4 main-right"">
-            <div class="product-detail">
-              <div class="product-name pl-5 ml-lg-4 poppins">
-                <h1>COLD BREW</h1>
-              </div>
-              <div class="product-desc mt-5 poppins">
-                <p>
-                  Cold brewing is a method of brewing that combines 
-                  ground coffee and cool water and uses time instead 
-                  of heat to extract the flavor. It is brewed in small 
-                  batches and steeped for as long as 48 hours.
-                </p>
-              </div>
-              <div class="delivery-time poppins mt-5">
-                <p>
-                  Delivery only on 
-                  <span>
-                    <strong>
-                      Monday to friday
-                    </strong>
-                      at
-                    <strong>1 - 7 pm</strong>
-                  </span>
-                </p>
-              </div>
-
-              <div class="count-n-price mt-4 mb-4">
-                <div class="row">
-                  <div class="col-lg-6 col-sm-12">
-                    <div class="product-amount d-flex flex-row">
-                      <div class="p-2">
-                        <button class="btn-min">
-                          -
-                        </button>
-                      </div>
-                      <div class="p-2">
-                        <input type="text" class="product-total-amount px-2"></input>
-                      </div>
-                      <div class="p-2">
-                        <button class="btn-plus">
-                          +
-                        </button>
-                      </div>
-                      
-
-                    </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6 main-right" style="margin-top: 16%;">
+            <div cl ass="col main-right-top">
+              <div class="address-card-container">
+                <div class="d-flex justify-content-between">
+                  <div class="p-2 bd-highlight">
+                    <span class="poppins" style="color: #fff; font-weight: 700; font-size: 20px; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);">
+                      Address details
+                    </span>
                   </div>
-                  <div class="col-lg-6 col-sm-12 text-right poppins">
-                    <p><strong>IDR 30.000</strong></p>
+                  <div class="p-2 bd-highlight">
+                    <button class="ml-auto poppins"
+                      style="
+                      border:unset;
+                      background-color: unset;
+                      color: #fff;
+                      "  
+                    >
+                    edit
+                  </button>
                   </div>
                 </div>
-              </div>
-
-              <div class="btn-add-n-ask poppins">
-                <button class="btn-add mt-3">
-                  Add to Cart
-                </button>
-                <br>
-                <button class="btn-ask mt-3">
-                  Ask a Staff
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-delivery-option px-3">
-          <div class="row">
-            <div class="main-left-bottom col-lg-4 col-sm-12 mt-5">
-              <div class="size-card">
-                <div class="title poppins text-center pt-3">
-                  <p>Choose a size</p>
-                </div>
-                <div class="btn-size-collection poppins text-center">
-                  <button class="btn-size rounded-circle">R</button>
-                  <button class="btn-size rounded-circle">L</button>
-                  <button class="btn-size rounded-circle">XL</button>
-                </div>
-              </div>
-            </div>
-              <div class="main-right-bottom col-lg-8 col-sm-12 mt-5 "> 
-                <div class="checkout-card row py-3 px-5 poppins">
-                  <div class="pic col-lg-3">
-                    <img class="rounded-circle" src="/frontend/images/cold_brew.png" style="width: 127px;">
-                  </div>
-                  <div class="desc col-lg-4 my-auto">
-                    <div class="desc-text">
-                      <h5 style="font-weight: 900;">COLD BREW</h5>
-                      <p>x1 (Large)</p>
-                      <p>x1 (Regular)</p>
-                    </div>
-                  </div>
-                  <div class="checkout col-lg-5 my-auto">
-                    <span class="ml-2 " style="font-weight: 700; font-size: 20px;">Checkout</span>
-                      <a href="payment.html">
-                        <button class="btn-checkout rounded-circle">
-                          <img src="/frontend/images/arrow-checkout.png" style="width: 25px;">
-                        </button>
-                      </a>
-                  </div>
                   
-                </div>
+                  <div class="address-card-content poppins" 
+                  style="          
+                  background-color: #fff !important;
+                  border-radius: 20px;
+                  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+                  padding: 30px 35px 10px;
+                  line-height: 20px;
+                  ">
+                    <p style="margin-bottom: unset;">
+                      <strong>
+                        Delivery
+                      </strong>
+                      to Iskandar Street
+                    </p>
+                    <hr style="margin: 12.7px 0">
+                    <p>
+                      Km 5 refinery food road oppsite re public road, effurun, Jakarta 
+                    </p>
+                    <hr style="margin: 12.7px 0">
+                    <p>
+                      +62 81348287878
+                    </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col main-right-bottom mt-5">
+              
+              <div class="address-card-container">
+                  <span class="poppins" style="color: #fff; font-weight: 700; font-size: 20px; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);">
+                    Payment method
+                  </span>
+                  
+                  <div class="address-card-content poppins mt-2">
+                      <input class="mr-2" type="radio" style="width: 20px;"> 
+                      <img class="mr-4" src="/frontend/images/card-icon.png" width="30px">
+                      <span class="poppins">Card</span>
+                    <hr style="margin: 12.7px 0">
+                      <input class="mr-2" type="radio" style="width: 20px;"> 
+                      <img class="mr-4" src="/frontend/images/bank-icon.png" width="30px">
+                      <span class="poppins">Bank</span>
+                    <hr style="margin: 12.7px 0">
+                      <input class="mr-2" type="radio" style="width: 20px;"> 
+                      <img class="mr-4" src="/frontend/images/cod-icon.png" width="30px">
+                      <span class="poppins">Cash on Delivery</span>
+                  </div>
+
+                  <button class="btn-confirm poppins mt-5">
+                    Confirm and Pay
+                  </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-
     <footer class="bg-light">
       <div class="container">
         <div class="d-flex flex-row justify-content-center">
