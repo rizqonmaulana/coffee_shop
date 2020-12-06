@@ -17,6 +17,19 @@ nav.navbar-brand img {
   color: pink;
 }
 
+.btn-yellow-brown {
+  background-color: #ffba33;
+  color: #6a4029;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: unset;
+}
+
+.btn-yellow-brown:hover {
+  background-color: #fcac0d;
+}
+
 .btn-brown-white {
   background-color: #6a4029;
   color: #fff;
@@ -33,7 +46,7 @@ nav.navbar-brand img {
 .btn-white-brown {
   background-color: #fff;
   color: #6a4029;
-  padding: 10px 30px;
+  padding: 10px 35px;
   border-radius: 10px;
   font-weight: 700;
   border: 2px solid #6a4029;
@@ -479,6 +492,65 @@ main.history-page {
     }
   }
 }
+
+// profile page
+.profile-page {
+  background-image: url("/frontend/images/profile-bg.png");
+  .container {
+    padding-top: 40px;
+
+    .row {
+      background-color: #fff;
+      padding-top: 40px;
+      border-radius: 20px;
+      .main-left {
+        .left-container {
+          padding: 0 50px;
+        }
+      }
+      .main-right {
+        .right-container {
+          .form {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 10px 10px 40px 55px;
+            margin-bottom: 50px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.22);
+            h5 {
+              font-weight: 700;
+              font-size: 20px;
+              color: #4f5665;
+            }
+            .row {
+              width: 100%;
+              .col-lg-6,
+              .col-lg-4 {
+                label.title {
+                  color: #9f9f9f;
+                  font-size: 20px;
+                }
+                input {
+                  width: 100%;
+                  border-top: unset;
+                  border-left: unset;
+                  border-right: unset;
+                }
+              }
+              .row.my-3.gender-radio {
+                .text-center {
+                  label.gender-label.active {
+                    font-weight: 700;
+                    color: #6a4029;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // .btn-sign-up {
 //   color: #6a4029;
 //   background-color: #ffba33;
@@ -592,6 +664,26 @@ main.history-page {
         }
         .checkout {
           text-align: center;
+        }
+      }
+    }
+  }
+
+  // profile
+  .profile-page {
+    .container {
+      .row {
+        .main-right {
+          .right-container {
+            margin-top: 50px;
+            .form {
+              .row {
+                .col-lg-4 {
+                  margin-top: 30px;
+                }
+              }
+            }
+          }
         }
       }
     }

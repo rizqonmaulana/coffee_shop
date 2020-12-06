@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Coffee Shop | Profile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+  </head>
+  <body>
+    <nav>
+      <div class="container my-4">
+        <div class="d-flex justify-content-between">
+          <div class="nav-logo">
+            <ul class="navbar-nav">
+              <li>
+                  <a class="navbar-brand" href="#"><img class="mr-3" src="frontend/images/coffee-nav-icon.png"><strong style="color: #0B132A;">Coffe Shop</strong></a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-menu d-md-block d-none d-sm-none d-md-block">
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Cart</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">History</a>
+              </li>  
+            </ul>
+          </div>
+          <div class="nav-user ml-md-auto">
+            <ul class="navbar-nav mr-auto flex-row">
+              <li class="nav-item ml-lg-auto">
+                <a class="nav-link" href="#">
+                  <img src="/frontend/images/search-icon.png" style="width: 30px; height:30px;">
+                </a>
+              </li>
+              <li class="nav-item pr-0">
+                <a class="nav-link" href="#">
+                  <img src="/frontend/images/chat-icon.png">
+                </a>  
+              </li>
+              <li class="nav-item pr-0">
+                <a class="nav-link" href="#">
+                  <img class="rounded-circle" src="/frontend/images/profile.png">
+                </a>  
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- mobile view menu -->
+        <div class="d-flex flex-column d-none d-sm-block d-md-none">
+          <div class="nav-menu-m align-center mx-auto my-auto">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 flex-row">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Cart</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">History</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="profile-page pb-5">
+      <div class="container">
+        <h4 class="mb-4" style="color: #fff; font-weight: 500; font-size: 30px; text-shadow: 0px 6px 8px rgba(255, 255, 255, 0.26);"
+        >User Profile</h4>
+        <div class="row">
+          <div class="col-lg-4 main-left">
+            
+            <div class="left-container text-center">
+              <img class="rounded-circle" src="/frontend/images/profile.png" style="width: 150px;">
+              <h5 class="mt-3">Zalaikha</h5>
+              <p>zulaikha17@gmail.com</p>
+              <button class="btn-yellow-brown poppins mb-3" style="width: 100%;">
+                Choose photo
+              </button>
+              <br>
+              <button class="btn-brown-white poppins" style="width: 100%;">
+                Remove photo
+              </button>
+              <button class="btn-white-brown mt-5 py-3 poppins" style="width: 100%; border: 2px solid #9f9f9f;">
+                Edit Password
+              </button>
+              <p class="my-5 poppins" style="font-weight: 700; color: #6A4029; font-size: 20px;">
+                Do you want to save the change?
+              </p>
+              <button class="btn-brown-white poppins py-3" style="width: 100%;">
+                Save Change
+              </button>
+              <br>
+              <button class="btn-yellow-brown poppins mt-4 py-3" style="width: 100%;">
+                Cancel
+              </button>
+              <button class="btn-white-brown mt-5 py-3 poppins" style="width: 100%; border: 2px solid #9f9f9f;">
+                Log out
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8 main-right">
+            <div class="right-container">
+              <div class="form">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="poppins">Contacts</h5>
+                  <div class="p-2">
+                    <a href="#">
+                      <img src="/frontend/images/edit-icon.png" style="width: 40px;">
+                    </a>
+                  </div>
+                </div>
+                <div class="row poppins">
+                  <div class="col-lg-6">
+                    <label for="email" class="title">
+                      Email address:
+                    </label>
+                    <br>
+                    <input type="text" name="email">
+                  </div>
+                  <div class="col-1">
+
+                  </div>
+                  <div class="col-lg-4">
+                    <label for="phone" class="title">
+                      Mobile number:
+                    </label>
+                    <br>
+                    <input type="text" name="phone">
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-lg-6">
+                    <label for="address" class="title">
+                      Delivery address
+                    </label>
+                    <br>
+                    <input type="text" name="address">
+                  </div>
+                </div>
+                <h5 class= "mt-5 mb-2 poppins">Details</h5>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <label for="display-name" class="title">
+                      Display name:
+                    </label>
+                    <br>
+                    <input type="text" name="display-name">
+                  </div>
+                  <div class="col-1">
+                  </div>
+                  <div class="col-lg-4">
+                    <label for="dob" class="title">
+                      DD/MM/YY
+                    </label>
+                    <br>
+                    <input type="date" name="dob" value="2021-12-01">
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-lg-6">
+                    <label for="first-name" class="title">
+                      First name :
+                    </label>
+                    <br>
+                    <input type="text" name="first-name">
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-lg-6">
+                    <label for="last-name" class="title">
+                      Last name :
+                    </label>
+                    <br>
+                    <input type="text" name="last-name">
+                  </div>
+                </div>
+                <div class="row my-3 gender-radio">
+                  <div class="col text-center">
+                    <input type="radio" name="gender" value="male">
+                    <label class="ml-3 gender-label mr-5" for="gender">Male</label>
+                    
+                    <input class="ml-5" type="radio" name="gender" value="female" checked>
+                    <label class="ml-3 gender-label active poppins" for="gender" style="color:#6a4029; font-weight: 700;">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="d-flex flex-row justify-content-center">
+          <div class="p-2" style="width: 60vw;">
+            <span>
+              <img class="footer-brand mr-3" src="/frontend/images/coffee-nav-icon.png">
+              <strong class="coffee-shop">Coffee Shop</strong>
+            </span>
+            <p class="footer-text mt-3" style="line-height: 30px;">
+              Coffee Shop is a store that sells some good <br> 
+              meals, and especially coffee. We provide <br>
+              high quality beans
+            </p>
+            <div class="footer-icon-copyright d-none d-sm-block">
+              <div class="footer-media-icon d-flex flex-row mb-4">
+                <a href="#" class="p-2"><img src="/frontend/images/fb-icon.png"></a>
+                <a href="#" class="p-2"><img src="/frontend/images/tw-icon.png"></a>
+                <a href="#" class="p-2"><img src="/frontend/images/ig-icon.png"></a>
+              </div>
+              <p style="font-size: 16px; font-weight: 400; color: #AFB5C0;">
+                &copy;2020CoffeeStore
+              </p>
+            </div>
+          </div>
+          <div class="p-2 d-none d-sm-block" style="width: 20vw;">
+            <h5 class="footer-text-section">Product</h5>
+            <ul class="footer-text-2">
+              <li>Download</li>
+              <li>Pricing</li>
+              <li>Locations</li>
+              <li>Countries</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="p-2 d-none d-sm-block" style="width: 20vw;">
+            <h5 class="footer-text-section">Engage</h5>
+            <ul class="footer-text-2">
+              <li>Coffee Shop ?</li>
+              <li>FAQ</li>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="d-block d-sm-none">
+          <div class="d-flex flex-row justify-content-center">
+            <div class="p-2" style="width: 30vw;">
+              <h5 class="footer-text-section">Product</h5>
+              <ul class="footer-text-2">
+                <li>Download</li>
+                <li>Pricing</li>
+                <li>Locations</li>
+                <li>Countries</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <div class="p-2" style="width: 30vw;">
+              <h5 class="footer-text-section">Engage</h5>
+              <ul class="footer-text-2">
+                <li>Coffee Shop ?</li>
+                <li>FAQ</li>
+                <li>About Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="footer-icon-copyright d-block d-sm-">
+              <div class="footer-media-icon d-flex flex-row mb-4">
+                <a href="#" class="p-2"><img src="/frontend/images/fb-icon.png"></a>
+                <a href="#" class="p-2"><img src="/frontend/images/tw-icon.png"></a>
+                <a href="#" class="p-2"><img src="/frontend/images/ig-icon.png"></a>
+              </div>
+              <p style="font-size: 16px; font-weight: 400; color: #AFB5C0;">
+                &copy;2020CoffeeStore
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>  </body>
+</html>

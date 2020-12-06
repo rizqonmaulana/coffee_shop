@@ -16,6 +16,19 @@ nav.navbar-brand img {
   color: pink;
 }
 
+.btn-yellow-brown {
+  background-color: #ffba33;
+  color: #6a4029;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: unset;
+}
+
+.btn-yellow-brown:hover {
+  background-color: #fcac0d;
+}
+
 .btn-brown-white {
   background-color: #6a4029;
   color: #fff;
@@ -32,7 +45,7 @@ nav.navbar-brand img {
 .btn-white-brown {
   background-color: #fff;
   color: #6a4029;
-  padding: 10px 30px;
+  padding: 10px 35px;
   border-radius: 10px;
   font-weight: 700;
   border: 2px solid #6a4029;
@@ -489,6 +502,62 @@ main.history-page div.container div.history-list div.card .desc p {
   font-size: 14px;
 }
 
+.profile-page {
+  background-image: url("/frontend/images/profile-bg.png");
+}
+
+.profile-page .container {
+  padding-top: 40px;
+}
+
+.profile-page .container .row {
+  background-color: #fff;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+
+.profile-page .container .row .main-left .left-container {
+  padding: 0 50px;
+}
+
+.profile-page .container .row .main-right .right-container .form {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 10px 40px 55px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+.profile-page .container .row .main-right .right-container .form h5 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #4f5665;
+}
+
+.profile-page .container .row .main-right .right-container .form .row {
+  width: 100%;
+}
+
+.profile-page .container .row .main-right .right-container .form .row .col-lg-6 label.title,
+.profile-page .container .row .main-right .right-container .form .row .col-lg-4 label.title {
+  color: #9f9f9f;
+  font-size: 20px;
+}
+
+.profile-page .container .row .main-right .right-container .form .row .col-lg-6 input,
+.profile-page .container .row .main-right .right-container .form .row .col-lg-4 input {
+  width: 100%;
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+}
+
+.profile-page .container .row .main-right .right-container .form .row .row.my-3.gender-radio .text-center label.gender-label.active {
+  font-weight: 700;
+  color: #6a4029;
+}
+
 @media (max-width: 1200px) {
   .product-cust .main-left .coupon-card-parent {
     margin-left: -12% !important;
@@ -549,6 +618,12 @@ main.history-page div.container div.history-list div.card .desc p {
   }
   .product-details .main-right-bottom .checkout-card .checkout {
     text-align: center;
+  }
+  .profile-page .container .row .main-right .right-container {
+    margin-top: 50px;
+  }
+  .profile-page .container .row .main-right .right-container .form .row .col-lg-4 {
+    margin-top: 30px;
   }
 }
 
