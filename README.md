@@ -1,6 +1,9 @@
 # coffee_shop 
 coffee shop adalah project coffee shop online, untuk saat ini masih berupa front end dan dibangun menggunakan HTML, CSS & Bootstrap, untuk layout web serta mobile telah responsive
 
+project dapat dikunjungi di :
+coffee-shop-rm.netlify.app
+
 Product cust page
 ![alt text](https://i.ibb.co/fdSjv1m/screencapture-127-0-0-1-5500-2020-12-06-18-28-41.png)
 
